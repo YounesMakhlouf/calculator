@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Calculator" name="description">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+<header class="text-center py-4">
+    <h1 class="display-3">Calculator</h1>
+</header>
+<main class="container bg-dark calculator rounded p-0">
+    <section class="result text-end px-4 pb-3 pt-2">
+        <p class="text-secondary" id="temp"></p>
+        <p class="display-6" id="result"></p>
+    </section>
+    <section class="numbers">
+        <div class="row py-2 m-2">
+            <div class="col-6">
+                <button class="pushable btn" id="ac">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">AC</span>
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" id="del">DEL</button>
+            </div>
+            <div class="col operator">
+                <button class="btn btn-primary">/</button>
+            </div>
+        </div>
+        <div class="row py-2 m-2">
+            <div class="col number">
+                <button class="btn btn-primary">7</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">8</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">9</button>
+            </div>
+            <div class="col operator" id="multipication">
+                <button class="btn btn-primary">*</button>
+            </div>
+        </div>
+        <div class="row py-2 m-2">
+            <div class="col number">
+                <button class="btn btn-primary">4</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">5</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">6</button>
+            </div>
+            <div class="col operator" id="addition">
+                <button class="btn btn-primary">+</button>
+            </div>
+        </div>
+        <div class="row py-2 m-2">
+            <div class="col number">
+                <button class="btn btn-primary">1</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">2</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">3</button>
+            </div>
+            <div class="col operator" id="substraction">
+                <button class="btn btn-primary">-</button>
+            </div>
+        </div>
+        <div class="row py-2 m-2">
+            <div class="col number">
+                <button class="btn btn-primary">.</button>
+            </div>
+            <div class="col number">
+                <button class="btn btn-primary">0</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-primary" id="equal">=</button>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
